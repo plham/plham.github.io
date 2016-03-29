@@ -22,7 +22,7 @@ math: false
 本ソフトウェアに関する問い合わせは下記までお願いいたします．
 拡張機能や詳しい解説の要望などお待ちしています．
 
-> `izumi-sec(at)socsim.org`
+> `plham-discuss(at)socsim.org`
 
 
 # Contents
