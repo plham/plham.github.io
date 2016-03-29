@@ -1,0 +1,19 @@
+url: 'http://izumi-lab.github.io'
+title: 'Plham documentation'
+
+include: ['tutorial', 'class']
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      math: true
