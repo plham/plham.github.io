@@ -87,8 +87,6 @@ pre[class*="language-"] {
 
 .token.selector,
 .token.attr-name,
-.token.string,
-.token.char,
 .token.builtin,
 .token.inserted {
 	color: #bf5d16;
@@ -99,6 +97,7 @@ pre[class*="language-"] {
 
 .token.entity,
 .token.url,
+.token.char,
 .language-css .token.string,
 .style .token.string {
 	color: #2a00ff;
