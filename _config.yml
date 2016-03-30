@@ -8,6 +8,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+highlighter: none
+
 defaults:
   -
     scope:
