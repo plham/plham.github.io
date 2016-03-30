@@ -7,7 +7,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
+	color: #323232 !important;
 	text-shadow: none;
 	font-family: monospace;
 	text-align: left;
@@ -29,12 +29,10 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-	text-shadow: none;
 }
 
 @media print {

@@ -753,7 +753,7 @@ Prism.languages.java = Prism.languages.extend('clike', {
 	}
 });
 Prism.languages.x10 = Prism.languages.extend('clike', {
-	'keyword': /\b(abstract|continue|for|new|switch|assert|default|goto|package|do|if|private|this|break|implements|protected|throw|else|import|public|throws|case|instanceof|return|transient|catch|extends|try|final|interface|static|void|class|finally|strictfp|super|while|as|async|at|ateach|atomic|clocked|def|haszero|here|in|native|next|offer|offers|operator|property|resume|self|struct|type|val|var|when|Boolean|Char|Byte|Short|Int|Long|Float|Double|boolean|char|byte|short|int|long|float|double)\b/,
+	'keyword': /\b(abstract|continue|for|new|switch|assert|default|goto|package|do|if|private|this|break|implements|protected|throw|else|import|public|throws|case|instanceof|return|transient|catch|extends|try|final|interface|static|void|class|finally|strictfp|super|while|as|async|at|ateach|atomic|clocked|def|haszero|here|in|native|next|offer|offers|operator|property|resume|self|struct|type|val|var|when|Boolean|Char|Byte|Short|Int|Long|Float|Double|String|boolean|char|byte|short|int|long|float|double)\b/,
 	'number': /\b0b[01]+\b|\b0x[\da-f]*\.?[\da-fp\-]+\b|\b\d*\.?\d+(?:e[+-]?\d+)?[df]?\b/i,
 	'operator': {
 		pattern: /(^|[^.])(?:\+[+=]?|-[-=]?|!=?|<<?=?|>>?>?=?|==?|&[&=]?|\|[|=]?|\*=?|\/=?|%=?|\^=?|[?:~])/m,
