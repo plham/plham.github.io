@@ -229,7 +229,7 @@ JSON 上で乱数分布を指定する記法を可能にするため，`JSONRand
 以下に示すのはマーケットのプロパティに関する JSON ファイルの一部である．
 X1０ コード（上記 `setupMarket()` メソッド）との対応関係が読みとれるだろう．
 
-```json
+```javascript
 // samples/CI2002/config.json
 "Market": {
     "class": "Market",
@@ -293,7 +293,7 @@ public def setupFCNAgent(agent:FCNAgent, json:JSON.Value, random:JSONRandom) {
 
 以下に示すのは FCN エージェントのプロパティに関する JSON ファイルの一部である．
 
-```json
+```javascript
 // samples/CI2002/config.json
 "FCNAgents": {
     "class": "FCNAgent",
@@ -325,7 +325,7 @@ public def setupFCNAgent(agent:FCNAgent, json:JSON.Value, random:JSONRandom) {
 最後に，`Main` で実装済みの人工市場シミュレーションの流れを JSON ファイルから制御する方法を解説する．
 以下にその部分の JSON ファイルを示す．
 
-```json
+```javascript
 // samples/CI2002/config.json
 "simulation": {
     "markets": ["Market"],
