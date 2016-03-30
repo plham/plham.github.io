@@ -47,7 +47,6 @@ math: false
 ## Compile and run
 
 ```
-$ cd MultiAssetAM/
 $ x10c++ samples/CI2002/CI2002Main.x10
 $ ./a.out samples/CI2002/config.json
 ```

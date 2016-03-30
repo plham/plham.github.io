@@ -17,15 +17,15 @@ math: false
 
 ## Create your project
 
-GitHub からダウンロードしたあと，`MultiAssetAM` フォルダに移動し，ユーザのプロジェクトを作成する．
-ユーザのプロジェクト関連のファイルは，本ソフトウェア `plham` フォルダがある場所に配置することを推奨する．
-以下では，ユーザがソースコードを配置するフォルダを `YOUR_PROJECT` とした．
+GitHub からダウンロードしたあと，ユーザのプロジェクトを作成する．
+ユーザのプロジェクト関連のファイルは，本ソフトウェア `plham/plham` フォルダや `plham/samples` フォルダがある場所に配置することを推奨する．
+以下では，ユーザがソースコードを配置するフォルダを `YourProject` とした．
 
 ```
-$ cd MultiAssetAM
+$ cd plham
 $ ls
 README.md  doc/  hpc/  json/  plham/
-$ mkdir YOUR_PROJECT
+$ mkdir YourProject
 ```
 
 
@@ -41,14 +41,14 @@ Main クラスは `plham.Main` を継承し，`createAgents(JSON)` および `cr
 ```
 $ ls
 README.md  doc/  hpc/  json/  plham/  YourProject/
-$ ls YOUR_PROJECT/
+$ ls YourProject/
 YourMain.x10  config.json
 ```
 
 
 ## Compile & run your Main
 
-`plham` や `YOUR_PROJECT` のあるフォルダから，以下の手順でコンパイル・実行する．
+`plham` や `YourProject` のあるフォルダから，以下の手順でコンパイル・実行する．
 
 ```
 $ ls

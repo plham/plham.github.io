@@ -35,7 +35,6 @@ math: false
 ## Compile & run
 
 ```
- $ cd MultiAssetAM/
  $ x10c++ samples/PriceLimit/PriceLimitMain.x10
  $ ./a.out samples/PriceLimit/config.json
 ```

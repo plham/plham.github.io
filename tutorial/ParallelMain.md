@@ -39,7 +39,6 @@ math: false
 実行時にはいくつかの環境変数を設定する必要があるので，`samples/Parallel/run.sh` を用意した．
 
 ```
-$ cd MultiAssetAM/
 $ x10c++ -x10rt mpi samples/Parallel/ParallelMain.x10
 $ bash samples/Parallel/run.sh ./a.out samples/Parallel/config-002.json
 ```

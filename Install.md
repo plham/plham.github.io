@@ -25,9 +25,9 @@ X10 については，公式サイト
 
 X10 コンパイラは Java を使用するため，Java をインストールし，環境変数 `JAVA_HOME` を設定しておく必要がある．
 
-ここでは，X10 2.5.1 を Linux にインストールする場合を説明する．
+ここでは，X10 2.5.4 を Linux にインストールする場合を説明する．
 
-まず，以下のウェブサイトから「`x10-2.5.1_linux_x86_64.tgz`」をダウンロードする．
+まず，以下のウェブサイトから「`x10-2.5.4_linux_x86_64.tgz`」をダウンロードする．
 
   * [http://sourceforge.net/projects/x10/files/x10/]
 
@@ -36,10 +36,10 @@ X10 コンパイラは Java を使用するため，Java をインストール�
 ```
 $ su
 # ls
-x10-2.5.1_linux_x86_64.tgz
+x10-2.5.4_linux_x86_64.tgz
 
 # mkdir /usr/local/x10
-# tar zxf x10-2.5.1_linux_x86_64.tgz -C /usr/local/x10
+# tar zxf x10-2.5.4_linux_x86_64.tgz -C /usr/local/x10
 # exit
 ```
 
@@ -62,10 +62,10 @@ $ echo 'export PATH=/usr/local/x10/bin:$PATH' >>~/.profile
 ターミナルを起動し，以下の手順でソースコードを入手する．
 
 ```
-$ git clone git@github.com:izumi-ut/MultiAssetAM.git
+$ git clone git@github.com:plham/plham.git
 ```
 
-正しく完了すれば，`MultiAssetAM` というフォルダができている．
+正しく完了すれば，`plham` というフォルダができている．
 
 
 ## Run sample programs
@@ -76,7 +76,7 @@ $ git clone git@github.com:izumi-ut/MultiAssetAM.git
 先ほど `git clone` を実行したフォルダから，
 
 ```
-$ cd MultiAssetAM
+$ cd plham
 $ x10c++ samples/CI2002/CI2002Main.x10                   # C++ 経由でコンパイル
 $ ./a.out samples/CI2002/CI2002Main.json >output.dat     # 実行出力を output.dat に保存
 $ Rscript samples/CI2002/plot.R output.dat output.png    # 価格時系列をプロット

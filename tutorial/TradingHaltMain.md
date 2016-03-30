@@ -32,7 +32,6 @@ math: false
 ## Compile & run
 
 ```
- $ cd MultiAssetAM/
  $ x10c++ samples/TradingHalt/TradingHaltMain.x10
  $ ./a.out samples/TradingHalt/config.json
 ```

@@ -23,7 +23,6 @@ math: false
 ## Compile & run
 
 ```
- $ cd MultiAssetAM/
  $ x10c++ samples/FatFinger/FatFingerMain.x10
  $ ./a.out samples/FatFinger/config.json
 ```

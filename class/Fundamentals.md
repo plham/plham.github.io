@@ -13,7 +13,6 @@ math: true
 
   * `plham.Fundamentals`
   * `plham.util.MultiGeomBrownian`
-  * `plham.main.BaseMain`
 
 
 ## 多変量幾何ブラウン運動
