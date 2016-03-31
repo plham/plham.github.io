@@ -744,6 +744,7 @@ Prism.languages.js = Prism.languages.javascript;
 	inside.operator = Prism.languages.bash.operator;
 	inside.punctuation = Prism.languages.bash.punctuation;
 })(Prism);
+
 Prism.languages.java = Prism.languages.extend('clike', {
 	'keyword': /\b(abstract|continue|for|new|switch|assert|default|goto|package|synchronized|boolean|do|if|private|this|break|double|implements|protected|throw|byte|else|import|public|throws|case|enum|instanceof|return|transient|catch|extends|int|short|try|char|final|interface|static|void|class|finally|long|strictfp|volatile|const|float|native|super|while)\b/,
 	'number': /\b0b[01]+\b|\b0x[\da-f]*\.?[\da-fp\-]+\b|\b\d*\.?\d+(?:e[+-]?\d+)?[df]?\b/i,
@@ -752,19 +753,12 @@ Prism.languages.java = Prism.languages.extend('clike', {
 		lookbehind: true
 	}
 });
+
 Prism.languages.x10 = Prism.languages.extend('clike', {
 	'keyword': /\b(abstract|continue|for|new|switch|assert|default|goto|package|do|if|private|this|break|implements|protected|throw|else|import|public|throws|case|instanceof|return|transient|catch|extends|try|final|interface|static|void|class|finally|strictfp|super|while|as|async|at|ateach|atomic|clocked|def|haszero|here|in|native|next|offer|offers|operator|property|resume|self|struct|type|val|var|when|Boolean|Char|Byte|Short|Int|Long|Float|Double|String|boolean|char|byte|short|int|long|float|double)\b/,
 	'number': /\b0b[01]+\b|\b0x[\da-f]*\.?[\da-fp\-]+\b|\b\d*\.?\d+(?:e[+-]?\d+)?[df]?\b/i,
 	'operator': {
-		pattern: /(^|[^.])(?:\+[+=]?|-[-=]?|!=?|<<?=?|>>?>?=?|==?|&[&=]?|\|[|=]?|\*=?|\/=?|%=?|\^=?|[?:~])/m,
-		lookbehind: true
-	}
-});
-
-Prism.languages.insertBefore('java','function', {
-	'annotation': {
-		alias: 'punctuation',
-		pattern: /(^|[^.])@\w+/,
+		pattern: /(^|[^.])(?:\+[+=]?|-[-=]?|!=?|<<?=?|>>?>?=?|==?|&[&=]?|\|[|=]?|\*=?|\/=?|%=?|\^=?|[?:~]|=>|<:|:>)/m,
 		lookbehind: true
 	}
 });

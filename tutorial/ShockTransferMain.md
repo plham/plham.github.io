@@ -216,13 +216,13 @@ public def setupArbitrageAgent(agent:ArbitrageAgent, json:JSON.Value, random:JSO
 	assert getMarketByName(json("markets")(0)) instanceof IndexMarket : "ArbitrageAgents suppose only one IndexMarket";
 	val market = getMarketByName(json("markets")(0)) as IndexMarket;
 	agent.setMarketAccessible(market);
-	for (m in market.getComponentList()) {
-		agent.setMarketAccessible(m);
+	for (id in market.getComponents()) {
+		agent.setMarketAccessible(id);
 	}
 
 	agent.setAssetVolume(market, random.nextRandom(json("assetVolume")) as Long);
-	for (m in market.getComponentList()) {
-		agent.setAssetVolume(m, random.nextRandom(json("assetVolume")) as Long);
+	for (id in market.getComponents()) {
+		agent.setAssetVolume(id, random.nextRandom(json("assetVolume")) as Long);
 	}
 	agent.setCashAmount(random.nextRandom(json("cashAmount")));
 }
