@@ -91,7 +91,7 @@ JSON（JavaScript Object Notation）は軽量のデータ交換フォーマッ�
 
 ## "extends" keyword
 
-See [JSON](/JSON).
+See [JSON](/class/JSON).
 
 
 ## Group pseudo-class

@@ -189,11 +189,10 @@ public def setupPriceLimitRule(rule:PriceLimitRule, json:JSON.Value, random:JSON
 
 実装上では，下記の補助メソッド群が提供されており，ユーザが `GLOBAL` に直接アクセスすることは少ないと思われる．
 
-| Keys | Value | Market                | Agent                | Event
-|------|-------|-----------------------|----------------------|----------------------
-| Many | Many  | `getMarketsByNames()` | `getAgentsByNames()` | `getEventsByNames()`
-| One  | Many  | `getMarketsByName()`  | `getAgentsByName()`  | `getEventsByName()`
-| One  | One   | `getMarketByName()`   | `getAgentByName()`   | `getEventByName()`
+| Market                | Agent                | Event
+|-----------------------|----------------------|----------------------
+| `getMarketsByName()`  | `getAgentsByName()`  | `getEventsByName()`
+| `getMarketByName()`   | `getAgentByName()`   | `getEventByName()`
 
 上記の JSON ファイルでは，`"targetMarkets": ["Market"]` のうち，`"Market"` の部分がマーケットの定義名と一致していることが重要である．
 上記の X10 コードでは，`getMarketsByNames(json("targetMarkets"))` という書き方で，既にインスタンス化されているマーケット `"Market"` を取得している．

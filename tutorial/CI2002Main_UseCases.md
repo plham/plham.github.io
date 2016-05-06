@@ -20,7 +20,7 @@ math: false
 コンパイルは以下の手順で行う．
 
 ```
-$ x10c++ samples/CI2002Main/CI2002Main.x10
+$ x10c++ samples/CI2002/CI2002Main.x10
 ```
 
 コンパイルに成功すると実行ファイル `a.out` が生成される．

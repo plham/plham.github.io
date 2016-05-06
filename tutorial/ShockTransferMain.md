@@ -144,11 +144,10 @@ public def createMarkets(json:JSON.Value):List[Market] {
 
 実装上では，下記の補助メソッド群が提供されており，ユーザが `GLOBAL` に直接アクセスすることは少ないと思われる．
 
-| Keys | Value | Market                | Agent                | Event
-|------|-------|-----------------------|----------------------|----------------------
-| Many | Many  | `getMarketsByNames()` | `getAgentsByNames()` | `getEventsByNames()`
-| One  | Many  | `getMarketsByName()`  | `getAgentsByName()`  | `getEventsByName()`
-| One  | One   | `getMarketByName()`   | `getAgentByName()`   | `getEventByName()`
+| Market                | Agent                | Event
+|-----------------------|----------------------|----------------------
+| `getMarketsByName()`  | `getAgentsByName()`  | `getEventsByName()`
+| `getMarketByName()`   | `getAgentByName()`   | `getEventByName()`
 
 具体的には以下のようにする．
 

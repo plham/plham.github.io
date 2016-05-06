@@ -67,19 +67,19 @@ Chiarella & Iori (2002) のモデルは
 
 本ソフトウェアを使う場合，上記の機能を実現するマーケットおよびエージェントはそれぞれ次のクラスに既に実装されており，ユーザはこれを利用できる．
 
-  * [plham.Market](/Market)
-  * [plham.agent.FCNAgent](/FCNAgent)
+  * [plham.Market](/class/Market)
+  * [plham.agent.FCNAgent](/class/FCNAgent)
 
 以下では `FCNAgent` の実装を概観し，エージェントクラス作成のポイントを押さえる．
 意思決定の方法は原著 Chiarella & Iori (2002) や鳥居・中川・和泉 (2015) を参照してほしい．
-また，本記事で用いる `Market` や `FCNAgent` をどのように X10 で実装したかは部分的には [`Market`](/Market) や [`FCNAgent`](/FCNAgent) で解説されているが，直接コードを確認してほしい．
+また，本記事で用いる `Market` や `FCNAgent` をどのように X10 で実装したかは部分的には [`Market`](/class/Market) や [`FCNAgent`](/class/FCNAgent) で解説されているが，直接コードを確認してほしい．
 自分で新しいエージェントクラスを作成するときには，原著論文と X10 プログラムを見比べると参考になるだろう．
 
 
 ## Market
 
 `Market` クラスは以下のメソッドを含む．
-Market クラスは連続ダブルオークション（ザラバ方式）で注文を処理する（詳しくは[こちら](/Market)）．
+Market クラスは連続ダブルオークション（ザラバ方式）で注文を処理する（詳しくは[こちら](/class/Market)）．
 
 ```x10
 // plham/Market.x10
@@ -110,7 +110,7 @@ public class Market {
 ## FCNAgent
 
 `FCNAgent` クラスは次のような構造をもつ．
-`FCNAgent` クラスは Chiarella & Iori (2002) 型の意思決定を実装する（詳しくは[こちら](/FCNAgent)）．
+`FCNAgent` クラスは Chiarella & Iori (2002) 型の意思決定を実装する（詳しくは[こちら](/class/FCNAgent)）．
 
 ```x10
 // plham/agent/FCNAgent.x10
@@ -222,8 +222,8 @@ public def setupMarket(market:Market, json:JSON.Value, random:JSONRandom) {
 ```
 
 各所でみられる `json(key)` は JSON ファイルで定義された key-value ペアを取りだす操作である．
-上記のコードでは，[Market の属性](/Market) の初期値を JSON から読み込み，設定している．
-JSON 上で乱数分布を指定する記法を可能にするため，`JSONRandom#nextRandom()` を経由して初期値を設定している（詳しくは [こちら](/JSONRandom)）．
+上記のコードでは，[Market の属性](/class/Market) の初期値を JSON から読み込み，設定している．
+JSON 上で乱数分布を指定する記法を可能にするため，`JSONRandom#nextRandom()` を経由して初期値を設定している（詳しくは [こちら](/class/JSONRandom)）．
 
 `createMarkets()` の引数で与えられる `json:JSON.Value` は key `"Market"` に対応した value，すなわち `{ "class": "Market",... }` を格納した JSON.Value オブジェクトである．
 以下に示すのはマーケットのプロパティに関する JSON ファイルの一部である．
@@ -246,7 +246,7 @@ JSON の詳細は[こちら](/tutorial/JSON_for_Main)を参照してほしい．
 ### createAgents()
 
 `createAgents()` についても同じ仕方で書かれている．
-Market 同じく，[FCNAgent の属性](/FCNAgent) の初期値を JSON から読み込み，設定している．
+Market 同じく，[FCNAgent の属性](/class/FCNAgent) の初期値を JSON から読み込み，設定している．
 ただし，複数のエージェントを生成している点に留意する．
 
 ```x10
@@ -314,7 +314,7 @@ public def setupFCNAgent(agent:FCNAgent, json:JSON.Value, random:JSONRandom) {
 }
 ```
 
-上記 JSON ファイルの説明は[こちら](/FCNAgent)を参照してほしいが，たとえば，`"chartWeight"` をより大きな数値に設定すれば，チャート重視型戦略の多い場合の取引をシミュレーションできる．
+上記 JSON ファイルの説明は[こちら](/class/FCNAgent)を参照してほしいが，たとえば，`"chartWeight"` をより大きな数値に設定すれば，チャート重視型戦略の多い場合の取引をシミュレーションできる．
 
 
 

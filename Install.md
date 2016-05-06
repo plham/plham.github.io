@@ -78,7 +78,7 @@ $ git clone git@github.com:plham/plham.git
 ```
 $ cd plham
 $ x10c++ samples/CI2002/CI2002Main.x10                   # C++ 経由でコンパイル
-$ ./a.out samples/CI2002/CI2002Main.json >output.dat     # 実行出力を output.dat に保存
+$ ./a.out samples/CI2002/config.json >output.dat         # 実行出力を output.dat に保存
 $ Rscript samples/CI2002/plot.R output.dat output.png    # 価格時系列をプロット
 ```
 

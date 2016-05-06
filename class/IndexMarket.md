@@ -14,7 +14,7 @@ IndexMarket クラスは，株価指数およびその構成銘柄（現物銘�
   * 固有の指数計算方式をもつ
   * 株価指数の情報を提供する
 
-といった点で [Market](/Market) クラスと異なる．
+といった点で [Market](/class/Market) クラスと異なる．
 他方，IndexMarket クラス自体が連続ダブルオークション形式の取引を提供する点は共通している．
 
 
@@ -27,12 +27,12 @@ IndexMarket クラスは，株価指数およびその構成銘柄（現物銘�
 
 ## Parameters
 
-See [Market](/Market)
+See [Market](/class/Market)
 
 
 ## Parameter setup from JSON
 
-See [Market](/Market)
+See [Market](/class/Market)
 
 
 ## Fields & Methods
