@@ -53,7 +53,7 @@ $ Rscript samples/MarketShare/plot.R output.dat output.png
 また，一般にマーケットメイカーは約定しやすい位置に注文をだすため，実質的に価格変動の上限下限を制御する機能を有する．
 このため，図では，銘柄 B のほうが価格の変動が小さい．
 
-![small](/tutorial/CI2002Main.figs/fig01.png)
+![small](/tutorial/MarketShare.figs/fig01.png)
 
 
 # マーケットメイカーのスプレッドの影響分析
@@ -98,7 +98,7 @@ $ Rscript samples/MarketShare/plot-tradeshare.R output.dat output.png
 赤線は銘柄 B の出来高シェア（0 〜 1 の範囲）である．
 初期の出来高シェア 0.1 から次第に増加しており，出来高シェアを奪っている（図は１標本であるため，ランによりバラつきがある）．
 
-![small](/tutorial/CI2002Main.figs/fig02.png)
+![small](/tutorial/MarketShare.figs/fig02.png)
 
 
 
