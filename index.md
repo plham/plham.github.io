@@ -35,22 +35,28 @@ math: false
   * Tutorial
     * [自分のプロジェクトを作る (YourProject)](/tutorial/YourProject)
     * [アウトラインとガイドライン (Outline)](/tutorial/Outline)
-    * 事例 1: 単一銘柄の人工市場シミュレーション
+    * 事例: 単一銘柄の人工市場シミュレーション
       * [CI2002Main](/tutorial/CI2002Main)
       * [CI2002 UseCases](/tutorial/CI2002Main_UseCases)
-    * 事例 2: 値幅制限規制
+    * 事例: 値幅制限規制
       * [PriceLimitMain](/tutorial/PriceLimitMain)
       * [PriceLimit UseCases](/tutorial/PriceLimitMain_UseCases)
-    * 事例 3: 取引停止規制と理論価格ショック
+    * 事例: 取引停止規制と理論価格ショック
       * [TradingHaltMain](/tutorial/TradingHaltMain)
       * [TradingHalt UseCases](/tutorial/TradingHaltMain_UseCases)
-    * 事例 4: 誤発注型ショック（Fat finger）
+    * 事例: 誤発注型ショック（Fat finger）
       * [FatFingerMain](/tutorial/FatFingerMain)
       * [FatFinger UseCases](/tutorial/FatFingerMain_UseCases)
-    * 事例 5: 高頻度取引によるショック伝搬（FlashCrash）
+    * 事例: 高頻度取引によるショック伝搬（FlashCrash）
       * [ShockTransferMain](/tutorial/ShockTransferMain)
       * [ShockTransfer UseCases](/tutorial/ShockTransferMain_UseCases)
-    * 事例 6: 数百銘柄シミュレーションの並列実行
+    * 事例: マーケットメイカと市場シェア競争（MarketShare）
+      * [MarketShareMain](/tutorial/MarketShareMain)
+      * [MarketShareMain UseCases](/tutorial/MarketShareMain_UseCases)
+    * 事例: ダークプール市場の影響（DarkPoolMain）
+      * [DarkPoolMain](/tutorial/DarkPoolMain)
+      * [DarkPoolMain UseCases](/tutorial/DarkPoolMain_UseCases)
+    * 事例: 数百銘柄シミュレーションの並列実行
       * [ParallelMain](/tutorial/ParallelMain)
     * 補足説明など
       * [JSON for Main](/tutorial/JSON_for_Main)
@@ -63,7 +69,6 @@ math: false
     * [IndexMarket](/class/IndexMarket)
 	* [Agent](/class/Agent)
 	* [FCNAgent](/class/FCNAgent)
-    * [ArbitrageAgent](/class/ArbitrageAgent)
   * API (javadoc)
     * [(link)](/api)
 

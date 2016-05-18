@@ -56,7 +56,7 @@ $ Rscript samples/MarketShare/plot.R output.dat output.png
 ![small](/tutorial/MarketShareMain.figs/fig01.png)
 
 
-# マーケットメイカーのスプレッドの影響分析
+## マーケットメイカーのスプレッドの影響分析
 
 草田ら (2015) は３つの要因，すなわち，(1) マーケットメイカの利益率（スプレッド），(2) マーケットのティックサイズ（最小価格単位），(3) 出来高シェアの初期値の関係を分析している．
 本記事では，スプレッドの影響のみを調べる．
@@ -69,7 +69,7 @@ $ Rscript samples/MarketShare/plot.R output.dat output.png
 以下ではマーケットメイカーのスプレッド `netInterestSpread` を変化させた場合の収束時間を比較する．
 
 
-# マーケットメイカーのスプレッドが小さい場合
+## マーケットメイカーのスプレッドが小さい場合
 
 **問.2**
 
@@ -102,7 +102,7 @@ $ Rscript samples/MarketShare/plot-tradeshare.R output.dat output.png
 
 
 
-# マーケットメイカーのスプレッドがさらに小さい場合
+## マーケットメイカーのスプレッドがさらに小さい場合
 
 **問.3**
 

@@ -14,9 +14,9 @@ X10 は C++ か Java をバックエンドとし，X10 で書かれたプログ�
 
 X10 については，公式サイト
 
-  * [http://x10-lang.org/]
-  * [http://x10-lang.org/documentation/getting-started.html]
-  * [http://x10.sourceforge.net/x10doc/latest/]
+  * http://x10-lang.org/
+  * http://x10-lang.org/documentation/getting-started.html
+  * http://x10.sourceforge.net/x10doc/latest/
 
 などから情報を収集できる．
 
@@ -29,7 +29,7 @@ X10 コンパイラは Java を使用するため，Java をインストール�
 
 まず，以下のウェブサイトから「`x10-2.5.4_linux_x86_64.tgz`」をダウンロードする．
 
-  * [http://sourceforge.net/projects/x10/files/x10/]
+  * http://sourceforge.net/projects/x10/files/x10/
 
 コマンドラインターミナルを起動し，以下の手順を行う．
 
@@ -63,6 +63,7 @@ $ echo 'export PATH=/usr/local/x10/bin:$PATH' >>~/.profile
 
 ```
 $ git clone git@github.com:plham/plham.git
+$ git clone https://github.com/plham/plham.git    # HTTPS を使う場合
 ```
 
 正しく完了すれば，`plham` というフォルダができている．

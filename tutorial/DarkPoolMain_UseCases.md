@@ -51,7 +51,7 @@ $ Rscript samples/DarkPool/plot.R output.dat output.png
 ![small](/tutorial/DarkPoolMain.figs/fig01.png)
 
 
-# ダークプールの利用率が高い場合
+## ダークプールの利用率が高い場合
 
 **問.2**
 
@@ -81,7 +81,7 @@ $ Rscript samples/DarkPool/plot.R output.dat output.png
 
 
 
-# ダークプールの利用率がさらに高い場合
+## ダークプールの利用率がさらに高い場合
 
 **問.3**
 
