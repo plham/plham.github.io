@@ -94,7 +94,7 @@ Frijns ら (2010) はオプション銘柄を取引するエージェントと�
   * `samples/Option/agent/NoiseOptionAgent.x10`
 
 
-### JSON configuration file
+## JSON configuration file
 
 今回は Frijns ら (2010)が実データに照合して推定したパラメータを用いるため，オプションを取引するエージェントのパラメータは変更しない．
 その代わりに，エージェントの種類を変更し，それがボラティリティ・サーフェイスに及ぼす影響を観察する．
