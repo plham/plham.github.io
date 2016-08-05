@@ -96,7 +96,24 @@ Frijns ら (2010) はオプション銘柄を取引するエージェントと�
 
 ### JSON configuration file
 
-今回は Frijns ら (2010)が実データに照合して推定したパラメータを用いるため，`config.json` は変更しない．
+今回は Frijns ら (2010)が実データに照合して推定したパラメータを用いるため，オプションを取引するエージェントのパラメータは変更しない．
+その代わりに，エージェントの種類を変更し，それがボラティリティ・サーフェイスに及ぼす影響を観察する．
+以下に，`samples/Option/config.json` の一部を示す．
+
+```json
+// samples/Option/config.json
+"simulation": {
+	"markets": ["UnderlyingMarket", "OptionMarketCluster"],
+	"agents": ["UnderFCNAgents", "FundamentalistOptionAgents", "ChartistOptionAgents", "NoiseOptionAgents"],
+	"--agents": ["UnderNoiseAgents", "FundamentalistOptionAgents", "ChartistOptionAgents", "NoiseOptionAgents"],
+	"--agents": ["UnderFCNAgents", "OptionNoiseAgents"],
+	"--agents": ["UnderNoiseAgents", "OptionNoiseAgents"],
+}
+```
+
+ここで，`"--agents"` は比較実験で使う実験設定を記述している．
+シミュレーションで使われるのは `"agents"` のみで，他の `"--agents"` はすべて無視される．
+比較実験を行う場合はいずれかひとつのみ `"agents"` に変更すればよい．
 
 
 ## Simulations
