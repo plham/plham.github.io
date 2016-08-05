@@ -28,23 +28,21 @@ $ x10c++ samples/Option/OptionMain.x10
 今回実行するシミュレーションでは以下のエージェントを用いる．
 以下では，Frijns (2010) 型のエージェントをまとめて，オプション FCN エージェントと呼ぶ．
 
-| `"UnderFCNAgents"` | 原資産のみを取引する FCNAgent (Chiarella & Iori 2010)
+| `"UnderFCNAgents"` | 原資産のみを取引する FCNAgent (Chiarella & Iori 2002)
 | `"FundamentalistOptionAgents"` | オプションを取引するファンダメンタリスト (Frijns 2010)
 | `"ChartistOptionAgents"` | オプションを取引するチャーチスト (Frijns 2010)
 | `"NoiseOptionAgents"` | オプションを取引するノイズエージェント (Frijns 2010)
 
-次に，シミュレーションを実行し，ボラティリティ・サーフェイスのグラフを描画する（出力ファイルは output.png）．
+次に，シミュレーションを実行し，ボラティリティ・サーフェイスのグラフを描画する（出力ファイルは output.png； このとき，2 次元平面のヒートマップ output-2d.png も一緒に生成される）．
 
 ```
 $ ./a.out samples/Option/config.json >output.dat
 $ Rscript samples/Option/volsurface.R output.dat output.png
 ```
 
-以下に output.png および output-2d.png （一緒に生成される）を示す．
+以下に output.png を示す．
 
 ![small](/tutorial/OptionMain.figs/figXX-fcn-fcn.png)
-
-![small](/tutorial/OptionMain.figs/figXX-fcn-fcn-2d.png)
 
 
 ## 原資産 FCN エージェント，オプション FCN エージェントの場合
@@ -74,8 +72,6 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ![small](/tutorial/OptionMain.figs/figXX-n-fcn.png)
 
-![small](/tutorial/OptionMain.figs/figXX-n-fcn-2d.png)
-
 図から，原資産トレーダがノイズ的である場合にもスマイル形状が確認できる．
 ただし，この結果の場合，スマイルが非対称になっている．
 
@@ -102,8 +98,6 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 シミュレーションを実行し，ボラティリティ・サーフェイスのグラフを描画する．
 
 ![small](/tutorial/OptionMain.figs/figXX-fcn-n.png)
-
-![small](/tutorial/OptionMain.figs/figXX-fcn-n-2d.png)
 
 図から，オプショントレーダがノイズ的である場合には，スマイル形状が消失していることが確認できる．
 サーフェイスは平たく，また試行によって異なった様相を示す．
@@ -132,9 +126,8 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ![small](/tutorial/OptionMain.figs/figXX-n-n.png)
 
-![small](/tutorial/OptionMain.figs/figXX-n-n-2d.png)
-
 図から，両方のトレーダがノイズ的である場合には，スマイル形状が消失していることが確認できる．
+サーフェイスは凹凸が激しく，また試行によって異なった様相を示す．
 この結果は，問.3 に比べて，サーフェイスの乱雑さが目立つ．
 
 
