@@ -4,7 +4,7 @@ author: Takuma Torii
 math: false
 ---
 
-# OptionMain UseCases
+# OptionMain UseCases 02
 
 本記事では，[tutorial/OptionMain](OptionMain) で解説したプログラムを拡張し，さまざまなオプション取引戦略を加えたときのボラティリティ・サーフェイスへの影響を調べる．
 具体的には，川久保 (2015) で取り上げられた下記の戦略を実装した．
