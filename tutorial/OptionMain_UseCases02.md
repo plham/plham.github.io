@@ -20,7 +20,7 @@ math: false
   * `ProspectFCNOptionAgent` ... プロスペクト理論に基づく戦略
 
 
-## `StraddleOptionAgent`
+## StraddleOptionAgent
 
 同じ満期で同じ権利行使価格のコール・オプションとプット・オプションを組み合わせる取引戦略をいう．
 実装では，同じ原資産，同じ満期，同じ権利行使価格の銘柄ペアをランダムに選択し，原資産のボラティリティが十分に高い場合に取引を行う．
@@ -43,7 +43,7 @@ math: false
 ![small](/tutorial/OptionMain.figs/figXX-straddle.png)
 
 
-## `StrangleOptionAgent`
+## StrangleOptionAgent
 
 同じ満期で**異なる**権利行使価格のコール・オプションとプット・オプションを組み合わせる取引戦略をいう．
 実装では，同じ原資産，同じ満期，**異なる**権利行使価格の銘柄ペアをランダムに選択し，原資産のボラティリティが十分に高い場合に取引を行う．
@@ -66,7 +66,7 @@ math: false
 ![small](/tutorial/OptionMain.figs/figXX-strangle.png)
 
 
-## `SyntheticOptionAgent`
+## SyntheticOptionAgent
 
 コール・オプションとプット・オプションを組み合わて合成ポジションを作り，この合成ポジションの価格と先物ポジション（このシミュレーションでは任意の原資産を含む）の価格を比較して裁定取引（安い方を買い，高い方を売る）を行う取引戦略をいう．
 取引戦略には 2 つの可能性があり，
@@ -96,7 +96,7 @@ math: false
 両スマイルではなく，片スマイルがみられる．
 
 
-## `DeltaHedgeOptionAgent`
+## DeltaHedgeOptionAgent
 
 Black-Scholes モデルに含まれるデルタ（オプションのリスク指標）を利用した取引戦略をいう．
 詳しくは他の文献を参照されたい．
@@ -119,7 +119,7 @@ Black-Scholes モデルに含まれるデルタ（オプションのリスク指
 ![small](/tutorial/OptionMain.figs/figXX-deltahedge.png)
 
 
-## `ExCoverDashOptionAgent`
+## ExCoverDashOptionAgent
 
 通常はデルタヘッジを行うが，満期日の数日前からはリスク回避の目的で戦略的に原資産を売買する取引戦略をいう．
 詳しくは川久保 (2015) を参照されたい．
@@ -142,7 +142,7 @@ Black-Scholes モデルに含まれるデルタ（オプションのリスク指
 ![small](/tutorial/OptionMain.figs/figXX-excoverdash.png)
 
 
-## `PutCallParityOptionAgent`
+## PutCallParityOptionAgent
 
 プット・コール・パリティと知られるオプション銘柄間に成立する価格の関係式に基づき，実際の取引価格の関係式からの乖離（裁定機会）を利用する取引戦略をいう．
 詳しくは他の文献を参照されたい．
@@ -167,7 +167,7 @@ Black-Scholes モデルに含まれるデルタ（オプションのリスク指
 満期日近辺でのインプライド・ボラティリティの広がりがみられる．
 
 
-## `LeverageFCNOptionAgent`
+## LeverageFCNOptionAgent
 
 各資産の価値を，効用関数に基づき重みづけし，その重みづけされた価値に基づく取引戦略である．
 効用関数などの詳細は川久保 (2015) を参照されたい．
@@ -191,7 +191,7 @@ Black-Scholes モデルに含まれるデルタ（オプションのリスク指
 ![small](/tutorial/OptionMain.figs/figXX-leverage.png)
 
 
-## `ProspectFCNOptionAgent`
+## ProspectFCNOptionAgent
 
 プロスペクト理論に基づき，各資産の価値を重みづけし，その重みづけされた価値に基づく取引戦略である．
 実装では，木村 (2006) で提案された価格づけを採用している（ただし 1 資産のみを考慮する）．
@@ -213,6 +213,5 @@ Black-Scholes モデルに含まれるデルタ（オプションのリスク指
 この設定でえられたボラティリティ・サーフェイスを以下に示す．
 
 ![small](/tutorial/OptionMain.figs/figXX-prospect.png)
-
 
 
