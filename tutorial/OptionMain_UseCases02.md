@@ -1,5 +1,5 @@
 ---
-title: OptionMain UseCases
+title: OptionMain UseCases 02
 author: Takuma Torii
 math: false
 ---
@@ -214,4 +214,11 @@ Black-Scholes モデルに含まれるデルタ（オプションのリスク指
 
 ![small](/tutorial/OptionMain.figs/figXX-prospect.png)
 
+
+## References
+
+  * 川久保 (2015) 連成型人工市場モデルの構築によるデリバティブ市場の構造分析（東京大学 学位論文）
+  * 木村 (2006) プロスペクト理論を用いたオプション価格評価（早稲田大学 修士論文）
+  * Frijns, Lehnert, Zwinkels (2010) Behavioral heterogeneity in the option market
+  * Tompkins (2001) Implied volatility surfaces: uncovering regularities for options on financial futures
 
