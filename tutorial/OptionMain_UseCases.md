@@ -29,9 +29,11 @@ $ x10c++ samples/Option/OptionMain.x10
 以下では，Frijns (2010) 型のエージェントをまとめて，オプション FCN エージェントと呼ぶ．
 
 | `"UnderFCNAgents"` | 原資産のみを取引する FCNAgent (Chiarella & Iori 2002)
+| `"UnderRandomAgents"` | 原資産のみを取引するランダムエージェント (Chiarella & Iori 2002)
 | `"FundamentalistOptionAgents"` | オプションを取引するファンダメンタリスト (Frijns 2010)
 | `"ChartistOptionAgents"` | オプションを取引するチャーチスト (Frijns 2010)
 | `"NoiseOptionAgents"` | オプションを取引するノイズエージェント (Frijns 2010)
+| `"OptionRandomAgents"` | オプションを取引するランダムエージェント (Chiarella & Iori 2002)
 
 次に，シミュレーションを実行し，ボラティリティ・サーフェイスのグラフを描画する（出力ファイルは output.png； このとき，2 次元平面のヒートマップ output-2d.png も一緒に生成される）．
 
@@ -51,11 +53,11 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 この図では Tompkins (2001) の手法を用いて，シミュレーションデータを多項式で近似している．
 
 
-## 原資産 ノイズエージェント，オプション FCN エージェントの場合
+## 原資産 ランダム，オプション FCN エージェントの場合
 
 **問.2**
 
-> 原資産を取引する FCNAgent がノイズ的（ランダムウォーク）である場合を検証せよ．
+> 原資産を取引する FCNAgent がランダム的（ランダムウォーク）である場合を検証せよ．
 > プログラムをコンパイル・実行し，ボラティリティ・サーフェイスをグラフ化せよ．
 
 **解説**
@@ -64,7 +66,7 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ```json
 "simulation": {
-    "agents": ["UnderNoiseAgents", "FundamentalistOptionAgents", "ChartistOptionAgents", "NoiseOptionAgents"]
+    "agents": ["UnderRandomAgents", "FundamentalistOptionAgents", "ChartistOptionAgents", "NoiseOptionAgents"]
 }
 ```
 
@@ -72,15 +74,15 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ![small](/tutorial/OptionMain.figs/figXX-n-fcn.png)
 
-図から，原資産トレーダがノイズ的である場合にもスマイル形状が確認できる．
+図から，原資産トレーダがランダム的である場合にもスマイル形状が確認できる．
 ただし，この結果の場合，スマイルが非対称になっている．
 
 
-## 原資産 FCN エージェント，オプション ノイズエージェントの場合
+## 原資産 FCN エージェント，オプション ランダムの場合
 
 **問.3**
 
-> オプションを取引するトレーダがノイズ的（ランダムウォーク）である場合を検証せよ．
+> オプションを取引するトレーダがランダム的（ランダムウォーク）である場合を検証せよ．
 > プログラムをコンパイル・実行し，ボラティリティ・サーフェイスをグラフ化せよ．
 
 **解説**
@@ -89,11 +91,11 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ```json
 "simulation": {
-    "agents": ["UnderFCNAgents", "OptionNoiseAgents"]
+    "agents": ["UnderFCNAgents", "OptionRandomAgents"]
 }
 ```
 
-ここで，`"OptionNoiseAgents"` は Chiarella & Iori (2002) 型のエージェントである（Frijns (2001) 型はボラティリティをランダムに予想するだけで，ランダムウォークになる保証はないため）．
+ここで，`"OptionRandomAgents"` は Chiarella & Iori (2002) 型のエージェントである（Frijns (2001) 型はボラティリティをランダムに予想するだけで，ランダムウォークになる保証はないため）．
 
 シミュレーションを実行し，ボラティリティ・サーフェイスのグラフを描画する．
 
@@ -105,11 +107,11 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 今回のように価格がランダムウォークする場合にはインプライド・ボラティリティも平均的に定数になったと考えられる．
 
 
-## 原資産 ノイズエージェント，オプション ノイズエージェントの場合
+## 原資産 ランダム，オプション ランダムの場合
 
 **問.4**
 
-> 原資産を取引するトレーダも，オプションを取引するトレーダも，両方ノイズ的である場合を検証せよ．
+> 原資産を取引するトレーダも，オプションを取引するトレーダも，両方ランダム的である場合を検証せよ．
 > プログラムをコンパイル・実行し，ボラティリティ・サーフェイスをグラフ化せよ．
 
 **解説**
@@ -118,7 +120,7 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ```json
 "simulation": {
-    "agents": ["UnderNoiseAgents", "OptionNoiseAgents"]
+    "agents": ["UnderRandomAgents", "OptionRandomAgents"]
 }
 ```
 
@@ -126,7 +128,7 @@ $ Rscript samples/Option/volsurface.R output.dat output.png
 
 ![small](/tutorial/OptionMain.figs/figXX-n-n.png)
 
-図から，両方のトレーダがノイズ的である場合には，スマイル形状が消失していることが確認できる．
+図から，両方のトレーダがランダム的である場合には，スマイル形状が消失していることが確認できる．
 サーフェイスは凹凸が激しく，また試行によって異なった様相を示す．
 この結果は，問.3 に比べて，サーフェイスの乱雑さが目立つ．
 
