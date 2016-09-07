@@ -1,10 +1,10 @@
 ---
-title: OptionMain UseCases
+title: OptionMain UseCases 01
 author: Takuma Torii
 math: false
 ---
 
-# OptionMain UseCases
+# OptionMain UseCases 01
 
 本記事では，[tutorial/OptionMain](OptionMain) で解説したプログラムを使い，実際にシミュレーションを行う．
 
