@@ -135,7 +135,8 @@ Frijns ら (2010) はオプション銘柄を取引するエージェントと�
 
 ## Simulations
 
-次に，このプログラムを使って，シミュレーションを実行してみよう（[こちら](/tutorial/OptionMain_UseCases)）．
+次に，このプログラムを使って，シミュレーションを実行してみよう（[こちら](/tutorial/OptionMain_UseCases01)）．
+さらに，エージェントを拡張して，オプション取引戦略が与える影響を分析してみよう（[こちら](/tutorial/OptionMain_UseCases02)）．
 
 
 ## Related works

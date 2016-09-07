@@ -50,12 +50,18 @@ math: false
     * 事例: 高頻度取引によるショック伝搬（FlashCrash）
       * [ShockTransferMain](/tutorial/ShockTransferMain)
       * [ShockTransfer UseCases](/tutorial/ShockTransferMain_UseCases)
-    * 事例: マーケットメイカと市場シェア競争（MarketShare）
+    * 事例: ティックサイズと市場シェア競争（MarketShare）
       * [MarketShareMain](/tutorial/MarketShareMain)
-      * [MarketShareMain UseCases](/tutorial/MarketShareMain_UseCases)
+      * [MarketShareMain UseCases01](/tutorial/MarketShareMain_UseCases01)
+    * 事例: マーケットメイカと市場シェア競争（MarketShare）
+      * [MarketShareMain UseCases02](/tutorial/MarketShareMain_UseCases02)
     * 事例: ダークプール市場の影響（DarkPoolMain）
       * [DarkPoolMain](/tutorial/DarkPoolMain)
       * [DarkPoolMain UseCases](/tutorial/DarkPoolMain_UseCases)
+    * 事例: オプション市場とボラティリティ・スマイル
+      * [OptionMain](/tutorial/OptionMain)
+      * [OptionMain UseCases01](/tutorial/OptionMain_UseCases01)
+      * [OptionMain UseCases02](/tutorial/OptionMain_UseCases02)
     * 事例: 数百銘柄シミュレーションの並列実行
       * [ParallelMain](/tutorial/ParallelMain)
     * 補足説明など
